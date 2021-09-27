@@ -60,14 +60,14 @@
     <main>
       <section class="hero section">
         <div class="container hero-container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
         <button class="hero-btn btn" type="button">Заказать услугу</button>
       </div>
       </section>
       <section class="advantage section">
-        <div class="container advantage-container"></div>
+        <div class="container advantage-container">
         <h2 hidden>Наши особенности</h2>
-        <ul class="advantage-title list">
+        <ul class="advantage-list list">
           <li class="advantage-item">
             <h3 class="advantage-title">Внимание к деталям</h3>
             <p class="advantage-description">
@@ -97,56 +97,70 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="responsible section">
-        <h2 class="responsible-title">Чем мы занимаемся</h2>
-        <ul class="responsible-list list">
-          <li class="responsible-item">
-            <img src="./images/img.jpg" alt="Печатает код" width="370" />
+      <section class="service-section section">
+        <div class="container footer-container">
+        <h2 class="service-title">Чем мы занимаемся</h2>
+        <ul class="service-list list">
+          <li class="service-item">
+            <img src="./images/img.jpg" 
+            alt="Печатает код" 
+            width="370" />
           </li>
-          <li class="responsible-item">
+          <li class="service-item">
             <img
               src="./images/img(1).jpg"
               alt="Создает приложение "
-              width="370"
-            />
+              width="370" />
           </li>
-          <li class="responsible-item">
+          <li class="service-item">
             <img
               src="./images/img(2).jpg"
               alt="Смотрит на планшет"
-              width="370"
-            />
+              width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <section class="teammate section">
-        <h2 class="team">Наша команда</h2>
+        <div class="container">
+        <h2 class="team-main-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
             <img src="./images/img-1.jpg" alt="Фото" width="270" />
-            <h3 class="team-title">Игорь Демьяненко</h3>
+            <div class="team-border">
+              <h3 class="team-title">Игорь Демьяненко</h3>
             <p class="team-text" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="team-item">
             <img src="./images/img-2.jpg" alt="Фото" width="270" />
+            <div class="team-border">
             <h3 class="team-title">Ольга Репина</h3>
             <p class="team-text" lang="en">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-item">
             <img src="./images/img-3.jpg" alt="Фото" width="270" />
+            <div class="team-border">
             <h3 class="team-title">Николай Тарасов</h3>
             <p class="team-text" lang="en">Marketing</p>
+            </div>
           </li>
           <li class="team-item">
             <img src="./images/img-4.jpg" alt="Фото" width="270" />
+            <div class="team-border">
             <h3 class="team-title">Михаил Ермаков</h3>
             <p class="team-text" lang="en">Ui Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container footer-container">
       <a class="footer-logo link" href="#"
         >Web<span class="ft-logo">Studio</span></a
       >
@@ -166,11 +180,11 @@
           </li>
           <li>
             <a class="footer-item link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
+              >+38 099 111 11 11</a>
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

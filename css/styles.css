@@ -6,6 +6,8 @@
   --secondary-text-color: #757575;
   --logo-color: #2196f3;
   --focus-color: #2196f3;
+  --primary-background: #ffffff;
+  --secondary-background: #757575;
 }
 
 p,
@@ -24,6 +26,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -38,6 +42,10 @@ body {
 /*-----------------Header----------------------*/
 
 /*-------------------Logo----------------------*/
+
+.navigation {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
@@ -90,7 +98,7 @@ body {
 }
 
 .container {
-  width: 1200;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -186,7 +194,8 @@ body {
 }
 
 /*-------------------Advantage---------------------*/
-.advantage-container {
+
+.advantage-list {
   display: flex;
   align-items: center;
 }
@@ -197,28 +206,84 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.advantage-title:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantage-description {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-/*--------------------Responsible---------------------*/
-.responsible-title {
+.advantage-description:not(:last-child) {
+  margin-right: 30px;
+}
+/*--------------------Service---------------------*/
+.service-section {
+  padding-top: 0;
+}
+
+.service-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.service-item:not(:nth-child(n + 3)) {
+  margin-right: 30px;
 }
 
 /*--------------------Team----------------------------*/
 .teammate {
   background-color: #f5f4fa;
+}
+
+.team-main-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:nth-child(n + 4)) {
+  margin-right: 30px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-background);
 }
 
 .team-title {
@@ -229,6 +294,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -243,15 +309,23 @@ body {
 /*---------------------Footer-----------------------*/
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  width: 145px;
+  height: 31px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+.logo {
+  margin-bottom: 20px;
 }
 
 .ft-logo {
@@ -264,21 +338,28 @@ body {
 }
 
 .footer-map {
+  width: 231px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 }
 
-.footer-item {
+.footer-item-a {
+  width: 231px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-item:hover,
-.footer-item:focus {
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-item-a:hover,
+.footer-item-a:focus {
   color: var(--focus-color);
 }
 
@@ -289,7 +370,19 @@ body {
 
 /*-------------------Portfolio.html----------------*/
 
+.navportfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
+  width: 128px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -299,6 +392,7 @@ body {
   color: var(--primary-text-color);
   background: #f5f4fa;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -309,12 +403,31 @@ body {
 }
 
 /*-----------------examples---------------------*/
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.examples-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .examples-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+}
+.examples-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-background);
+  border: 1px solid #eeeeee;
 }
 
 .examples-text {
