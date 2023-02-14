@@ -44,13 +44,20 @@ margin: 0 auto;
 outline: 2px solid red;
 }
 
-
 .link {
 text-decoration: none;
 }
 
 .list {
 list-style: none;
+}
+
+.visually-hidden {
+position: absolute;
+clip: rect(0 0 0 0);
+width: 1px;
+height: 1px;
+margin: -1px;
 }
 /*------------header-------------*/
 
@@ -154,8 +161,6 @@ color: var(--secondary-title-color);
 }
 
 /*------------button-------------*/
-
-
 
 .section-button {
 background: #2E2F42;
@@ -353,6 +358,9 @@ color: #E7E9FC;
 
 
 /*------portfolio------*/
+.portfolio-hero {
+padding-top: 96px;
+}
 
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -361,8 +369,9 @@ color:#FFFFFF
 }
 
 .portfolio-list {
-display:flex;
+display: flex;
 justify-content: center;
+margin-bottom: 72px;
 }
 
 .portfolio-pre-item:not(:last-child) {
@@ -377,7 +386,33 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #4D5AE5;
 background-color:#F4F4FD;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 cursor: pointer;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-right: 24px;
+padding-left: 24px;
+}
+
+.portfolio-about {
+display: flex;
+flex-wrap: wrap;
+}
+
+.portfolio-about-item:not(:nth-child(3n)) {
+margin-right: 24px;
+}
+
+.portfolio-about-item:not(:nth-child(n + 7)) {
+margin-bottom: 24px;
+}
+
+.portfolio-border {
+padding: 32px 54px 64px 16px;
+background: #FFFFFF;
+border: 1px solid #E7E9FC;
+border-top: none;
 }
 
 .portfolio-title {
@@ -386,6 +421,7 @@ font-size: 20px;
 line-height: 1.2px;
 letter-spacing: 0.02em;
 color: var(--primary-title-color);
+margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -394,6 +430,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--secondary-title-color);
 }
+
+
 
 
 
