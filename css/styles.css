@@ -38,9 +38,9 @@ color: #2E2F42;
 
 .container {
 width: 1188px;
+margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
-margin: 0 auto;
 }
 
 .link {
@@ -96,9 +96,6 @@ line-height: 1.33;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4D5AE5;
-}
-
-.header-logo-item {
 margin-right: 76px;
 }
 
@@ -216,6 +213,7 @@ margin-bottom: 8px;
 }
 
 .hero-text {
+max-width: 264px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -257,9 +255,9 @@ padding-top: 120px;
 
 .team-title {
 font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: var(--primary-title-color);
@@ -405,7 +403,7 @@ margin-bottom: 24px;
 }
 
 .portfolio-border {
-padding: 32px 32px;
+padding: 32px 16px 32px 16px;
 background: #FFFFFF;
 border: 1px solid #E7E9FC;
 border-top: none;
@@ -414,7 +412,7 @@ border-top: none;
 .portfolio-title {
 font-weight: 500;
 font-size: 20px;
-line-height: 1.2px;
+line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--primary-title-color);
 margin-bottom: 8px;
