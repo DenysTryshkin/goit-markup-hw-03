@@ -399,7 +399,7 @@ margin-right: 24px;
 }
 
 .portfolio-about-item:not(:nth-child(n + 7)) {
-margin-bottom: 24px;
+margin-bottom: 48px;
 }
 
 .portfolio-border {
