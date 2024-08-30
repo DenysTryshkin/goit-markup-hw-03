@@ -83,12 +83,3 @@
 **`«B17»`** У картках на сторінці `Портфоліо` є рамка (властивість `border`),
 але тільки у нижній частині картки.
 
-# Web Studio
-
-![Web Page](./images/screencapture1.png)
-
----
-
-![Web Page](./images/screencapture2.png)
-
----
