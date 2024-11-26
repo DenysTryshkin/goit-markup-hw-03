@@ -1,150 +1,93 @@
-# Homework. Module 2. Introduction to CSS
+# Homework. Topic 3. Block Model. Flexbox
 
-## Task
+Create a repository `goit-markup-hw-03`.
+Clone the created repository and copy the files from the previous work into it.
+Add styles for geometry (width, margins, paddings, and borders) and content positioning using Flexbox for the pages of the homework #3 layout.
+Set up GitHub Pages and add the link to the live page in the "About" section of the GitHub repository.
 
-1. **Create a repository** called `goit-markup-hw-02`.
-2. **Clone** the created repository and copy the files from the previous task into it.
-3. **Perform the markup and styling of the homework assignment #2 page**.
-4. To optimize images, use the **squoosh** service.
-5. **Set up GitHub Pages** and add a link to the live page in the **About section of the GitHub repository**.
+### Acceptance Criteria by Mentor
+**Project**
+- **A1** There is an `images` folder with images in the root of the project.
+- **A2** There is a `css` folder with a styles file in the root of the project.
+- **A3** All styles are written in a single `styles.css` file located in the `css` folder.
+- **A4** File names do not contain uppercase letters, spaces, or transliteration. They contain only letters and English words.
+- **A5** The code is formatted using Prettier.
+- **A6** All images and textual content are taken from the layout.
+- **A7** A style normalizer [modern-normalize](https://cdnjs.com/libraries/modern-normalize) is included.
+- **A8** The code is written following the guidelines.
 
----
+**Design**
+- **B1** Global reset of styles is allowed for the `<h1>`...`<h6>`, `<p>`, and `<ul>` elements.
+- **B2** Elements have no external margins (margin property) that "break" the parent element.
+- **B3** Vertical spacing between two adjacent elements uses the `margin` property.
+- **B4** The spacing between the parent’s border and its child uses the `padding` property.
+- **B5** The sizes of external margins (margin) and internal paddings (padding) of elements are exactly as specified in the layout.
+- **B6** A general helper class `.container` is created for centering and limiting the content width.
+- **B8** The width of the "container" matches the layout and is 1158px.
+- **B9** The "container" wraps the content of the header, footer, and sections. That is, it is inside them.
+- **B10** Flexbox is used to arrange elements, but only where necessary. For example, in the header, navigation, lists in sections, etc., where arranging elements horizontally otherwise is impossible.
+- **B11** The final block sizes in the browser match the layout.
+- **B12** Elements do not have a fixed height, it is determined by their content.
+- **B13** The header has a bottom border, which should be zoomed in to see clearly in the layout.
+- **B14** Sections are stacked one below the other like a stack of books, without external margins.
+- **B15** A single class `.section` is used for all sections, with top and bottom paddings of 120px to push the content inside the section.
+- **B16** Cards in the "Our Portfolio" section have a border (border property), but only on the bottom of the card.
 
-## Acceptance Criteria for Review
+### Evaluation Format:
+Pass / Fail
 
-### Project
+### Submission Format:
+- Link to the live page (GitHub Pages)
+- Links to source files in the repository
+- Attach the repository file in zip format
 
-- **A1**: The project contains an `images` folder with images.
-- **A2**: The project contains a `css` folder with the styles file.
-- **A3**: All styles are written in a single `styles.css` file located in the `css` folder.
-- **A4**: File names do not contain uppercase letters, spaces, or transliteration. Names consist of only English letters and words.
-- **A5**: The source code is formatted using **Prettier**.
-- **A6**: All images and text content are taken from the mockup.
-- **A7**: The **modern-normalize** stylesheet is included.
-- **A8**: All raster images are optimized using **squoosh**.
-- **A9**: The code follows the established guidelines.
-
-### Markup
-
-- **B1**: The markup for the `Our Portfolio` section is written in the `index.html` file. HTML markup of all mockup elements is completed.
-- **B2**: Tags are used according to their semantic meaning.
-- **B3**: HTML passes validation without errors.
-- **B4**: Class names are descriptive and understandable to other developers.
-- **B5**: Class names do not contain uppercase letters, spaces, transliteration, or tag names. Names consist only of English letters and words. If a class name contains multiple words, they are separated by a hyphen.
-- **B6**: `<img>` tags include the `width` attribute at a minimum.
-- **B7**: Images are exported from the mockup in `jpg` format.
-- **B8**: Groups of similar elements are gathered in `<ul>` lists.
-- **B9**: All required fonts and their variations (weight and style) are linked from Google Fonts in a single link. The necessary weight for Raleway is 700, and for Roboto it is 400, 500, 700.
-
-### Styling
-
-- **C1**: Classes are used for styling.
-- **C2**: The `!important` rule is not used in styles.
-- **C3**: Interactive elements (buttons and links) change color on hover or focus, as indicated in the Style Guide.
-- **C4**: The contact text in the header changes color on hover and focus.
-- **C5**: The `font-family` property for the `<body>` element is set with the dominant font in the mockup **Roboto**.
-- **C6**: Alternative font-family values are specified at the end of the `font-family` list in the `<body>` tag.
-- **C7**: The **Roboto** font family is explicitly set only for the `<body>` element, other elements inherit it.
-- **C8**: The `<body>` element has the `color` property set with the dominant text color from the mockup. Other text inherits or overrides this value.
-- **C9**: The font size (`font-size`) for all text elements exactly matches the values in the mockup.
-- **C10**: The line height (`line-height`) for all text elements exactly matches the values in the mockup and is set as a multiplier, not in `px`.
-- **C11**: The color (`color` and `background-color`) of all elements exactly matches the values in the mockup.
-- **C12**: The font weight (`font-weight`) of all text elements exactly matches the values in the mockup. The font weight is explicitly specified only when it differs from the default for the element in the browser.
-- **C13**: Buttons have the `cursor` property set to `pointer`.
-- **C14**: No default property values that are set by the browser (e.g., `cursor: pointer` for links, `font-style: normal` or `font-weight: 400` for paragraphs) are repeated in the styles.
+**IMPORTANT**  
+Please refer to the instructions for uploading the working file from the repository on GitHub.
 
 ---
 
-## Grading Format
+# Домашня робота. Тема 3. Блокова модель. Flexbox
 
-Score from **0 to 100**.
+Створи репозиторій `goit-markup-hw-03`.
+Склонуй створений репозиторій і скопіюй в нього файли попередньої роботи.
+Додай стилі для геометрії (ширину, відступи, поля і рамки) і позиціонування контенту за допомогою Flexbox для сторінок макета домашнього завдання #3.
+Налаштуй GitHub Pages і додай посилання на живу сторінку в секцію "About" GitHub-репозиторія.
 
-## Submission Format
+### Критерії приймання роботи наставником
+**Проєкт**
+- **A1** У корені проєкту є папка `images` з зображеннями.
+- **A2** У корені проєкту є папка `css` з файлом стилів.
+- **A3** Всі стилі написані в одному файлі `styles.css`, який знаходиться в папці `css`.
+- **A4** У назвах файлів відсутні великі літери, пробіли і трансліт. Назви містять тільки літери і слова англійської мови.
+- **A5** Вихідний код відформатований за допомогою Prettier.
+- **A6** Всі зображення та текстовий контент взяті з макета.
+- **A7** Підключений нормалізатор стилів [modern-normalize](https://cdnjs.com/libraries/modern-normalize).
+- **A8** Код написаний з дотриманням настанови.
 
-- Link to the live page (GitHub Pages).
-- Link to the repository files.
-- Attach the repository as a **zip** file.
+**Оформлення**
+- **B1** Допускається глобальне скидання стилів за селектором тегу для елементів `<h1>`...`<h6>`, `<p>` і `<ul>`.
+- **B2** В елементів відсутні зовнішні відступи (властивість margin), що "пробивають" батьківський елемент.
+- **B3** Для вертикальних відступів між двома сусідніми елементами використовується властивість margin.
+- **B4** Для проміжку між рамкою батька і його дитиною використовується властивість padding.
+- **B5** Розміри зовнішніх відступів (властивість margin) і внутрішніх полів (властивість padding) елементів задані точно за макетом.
+- **B6** Створений загальний допоміжний клас `.container` для центрування і обмеження контенту по ширині.
+- **B8** Ширина "контейнера" відповідає макету і дорівнює 1158px.
+- **B9** "Контейнер" обгортає контент хедера, футера і секцій. Тобто знаходиться всередині них.
+- **B10** Для розташування елементів використовується Flexbox, але тільки там, де це необхідно. Наприклад, у шапці, навігації, списках в секціях тощо, тобто там, де розташувати елементи горизонтально по-іншому неможливо.
+- **B11** Фінальні розміри блоків в браузері відповідають макету.
+- **B12** В елементів відсутня фіксована висота, вона визначається їх контентом.
+- **B13** У хедера є нижня рамка, необхідно сильно наблизити макет, щоб побачити її.
+- **B14** Секції розташовані одна під одною як стопка книг, без зовнішніх відступів.
+- **B15** Для всіх секцій використовується один клас `.section`, якому задані верхні і нижні падінги по 120px, що відсувають контент всередину секції.
+- **B16** У картках секції "Our Portfolio" є рамка (властивість border), але тільки у нижній частині картки.
 
----
+### Формат оцінювання:
+Залік / Незалік
 
-## Important
+### Формат здачi:
+- Посилання на живу сторінку (GitHub Pages)
+- Посилання на похідні файли в репозиторії
+- Прикріплений файл репозиторію у форматі zip
 
-Please review the **Instructions for Uploading the Working File from GitHub Repository**.
-
-
----
-
-# Домашня робота. Модуль 2. Вступ до CSS
-
-## Завдання
-
-1. **Створи репозиторій** `goit-markup-hw-02`.
-2. **Склони** створений репозиторій і скопіюй в нього файли попередньої роботи.
-3. **Виконай розмітку і оформлення макета** сторінки домашнього завдання #2.
-4. Для оптимізації зображень використовуй сервіс **squoosh**.
-5. **Налаштуй GitHub Pages** і додай посилання на живу сторінку в секцію **About GitHub-репозиторія**.
-
----
-
-## Критерії приймання роботи наставником
-
-### Проєкт
-
-- **A1**: У корені проєкту є папка `images` з зображеннями.
-- **A2**: У корені проєкту є папка `css` з файлом стилів.
-- **A3**: Всі стилі написані в одному файлі `styles.css`, який знаходиться в папці `css`.
-- **A4**: У назвах файлів відсутні великі літери, пробіли і трансліт. Назви містять тільки літери і слова англійської мови.
-- **A5**: Вихідний код відформатований за допомогою **Prettier**.
-- **A6**: Всі зображення та текстовий контент взяті з макета.
-- **A7**: Підключений нормалізатор стилів [modern-normalize](https://cdnjs.com/libraries/modern-normalize).
-- **A8**: Всі растрові зображення оптимізовані з використанням **squoosh**.
-- **A9**: Код написаний з дотриманням настанови.
-
-### Розмітка
-
-- **B1**: Розмітка секції `Our Portfolio` набрана у файлі `index.html`. Виконана HTML-розмітка всіх елементів макета.
-- **B2**: Теги використані відповідно до їх семантичного змісту.
-- **B3**: HTML проходить перевірку валідатором без помилок.
-- **B4**: Імена класів описові та зрозумілі іншому розробнику.
-- **B5**: Імена класів не містять великих літер, пробілів, трансліту і назв тегів. Імена містять тільки літери і слова англійської мови. Якщо ім'я класу складається з декількох слів, вони розділяються дефісом.
-- **B6**: У тегів `<img>` вказані атрибути розмірів, як мінімум `width`.
-- **B7**: Зображення експортовані з макета у форматі `jpg`.
-- **B8**: Групи однотипних елементів зібрані у списки `<ul>`.
-- **B9**: Всі необхідні шрифти за макетом та їх варіації (вага і накреслення) підключені з сервісу Google Fonts одним посиланням. Необхідна вага для Raleway - 700, а для Roboto - 400, 500, 700.
-
-### Оформлення
-
-- **C1**: Для оформлення використовуються селектори класу.
-- **C2**: В стилях відсутній `!important`.
-- **C3**: Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
-- **C4**: Текст контактів в хедері змінює колір при ховері і фокусі.
-- **C5**: Для елемента `<body>` задана властивість `font-family` з домінантним шрифтом на макеті **Roboto**.
-- **C6**: Вказані альтернативні варіанти шрифта і тип сімейства (без зарубок) в кінці переліку `font-family` в елемента `<body>`.
-- **C7**: Сімейство шрифтів **Roboto** явно задане тільки для елемента `<body>`, інші елементи наслідують його.
-- **C8**: Для елемента `<body>` задано властивість `color` з основним кольором тексту, взятим з макету. Інший текст наслідує або перевизначає це значення.
-- **C9**: Розмір шрифтів (`font-size`) для всіх елементів тексту точно відповідає значенням з макета.
-- **C10**: Міжрядковий інтервал (`line-height`) для всіх елементів тексту точно відповідає значенням з макета і вказаний у вигляді множника, а не у пікселях.
-- **C11**: Колір (`color` і `background-color`) для всіх елементів точно відповідає значенням з макета.
-- **C12**: Вага шрифта (`font-weight`) для всіх елементів тексту точно відповідає значенням з макета. Вага шрифта явно задається лише там, де вона відрізняється від стандартної для елементів браузера.
-- **C13**: Кнопки мають властивість `cursor` зі значенням `pointer`.
-- **C14**: У стилях не повторюються властивості, які мають стандартні значення для елементів (наприклад, для посилань `cursor: pointer`, для абзаців `font-style: normal` або `font-weight: 400`).
-
-
----
-
-## Формат оцінювання
-
-Оцінка від **0 до 100**.
-
-## Формат здачi
-
-- Посилання на живу сторінку (GitHub Pages).
-- Посилання на похідні файли в репозиторії.
-- Прикріплений файл репозиторію у форматі **zip**.
-
----
-
-## Важливо
-
-Переглянь **Інструкцію щодо завантаження робочого файлу з репозиторію на Github**.
-
+**ВАЖЛИВО**  
+Перегляньте Інструкцію щодо завантаження робочого файлу з репозиторію на GitHub.
