@@ -1,7 +1,42 @@
-body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #fff;
+/* #region base */
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    cursor: pointer;
+    border: none;
 }
 
 h2 {
@@ -12,21 +47,34 @@ h2 {
     color: #2e2f42;
 }
 
-ul,
-ol {
-    list-style-type: none;
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
+/* #endregion */
+
+/* #region header */
+.header-page {
+    border-bottom: 1px solid #e7e9fc;
 }
 
-button {
-    cursor: pointer;
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
-/* header */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -36,6 +84,9 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding: 24px 0;
+    margin-right: 76px;
+
 }
 
 .logo-dark {
@@ -62,6 +113,12 @@ button {
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
 }
 
 .contacts-link {
@@ -71,19 +128,25 @@ button {
     color: #434455;
 }
 
-/* hero */
+/* #endregion */
 
+/* #region hero */
 .hero {
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    text-align: center;
+    padding-bottom: 48px;
+    margin: 0 auto;
 }
 
 .button:hover,
@@ -92,14 +155,22 @@ button {
 }
 
 .btn-primary {
+    display: flex;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    margin: 0 auto;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     background-color: #4d5ae5;
+    border-radius: 4px;
 }
 
-/* section advantages */
+/* #endregion */
+
+/* #region advantages */
 
 .advantages-title {
     font-weight: 500;
@@ -115,8 +186,9 @@ button {
     color: #434455;
 }
 
-/* section team */
+/* #endregion */
 
+/* #region team */
 .team {
     background-color: #F4F4FD;
 }
@@ -147,9 +219,9 @@ button {
     color: #434455;
 }
 
+/* #endregion */
 
-/* section portfolio */
-
+/* #region portfolio */
 .portfolio-header {
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -172,8 +244,9 @@ button {
     color: #434455;
 }
 
-/* footer */
+/* #endregion */
 
+/* #region footer */
 .footer {
     background: #2e2f42;
 }
@@ -187,3 +260,5 @@ button {
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
+/* #endregion */
