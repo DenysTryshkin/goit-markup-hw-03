@@ -106,7 +106,6 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 76px;
-
 }
 
 .logo-dark {
@@ -193,8 +192,12 @@ body {
 /* #region advantages */
 .advantages-list {
     display: flex;
-    width: calc((100% - 72px) / 4);
     gap: 24px;
+    width: 100%;
+}
+
+.advantages-item:first-child {
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-title {
@@ -248,6 +251,7 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-item {
@@ -259,7 +263,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
     padding: 32px 0;
     background: var(--WHITE, #FFF);
 }
@@ -299,7 +302,6 @@ body {
     padding: 32px 16px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
     border: 1px solid #E7E9FC;
     border-top: none;
     background: #FFF;
@@ -311,6 +313,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -327,9 +330,19 @@ body {
     padding: 100px 0;
 }
 
+.footer-logo-dark {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-bottom: 16px;
+}
+
 .footer-logo-light {
     color: #f4f4fd;
-    margin-bottom: 16px;
 }
 
 .footer-text {
