@@ -103,7 +103,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 76px;
 
 }
@@ -174,7 +175,7 @@ body {
 }
 
 .btn-primary {
-    display: flex;
+    display: block;
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
@@ -230,7 +231,7 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -279,7 +280,7 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -328,7 +329,7 @@ body {
 
 .footer-logo-light {
     color: #f4f4fd;
-    padding-bottom: 17px;
+    margin-bottom: 16px;
 }
 
 .footer-text {
