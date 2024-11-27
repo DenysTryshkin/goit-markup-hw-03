@@ -41,6 +41,11 @@ button {
     border: none;
 }
 
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -185,10 +190,6 @@ body {
 /* #endregion */
 
 /* #region advantages */
-.advantages {
-    padding: 120px 0;
-}
-
 .advantages-list {
     display: flex;
     width: calc((100% - 72px) / 4);
@@ -221,7 +222,6 @@ body {
 /* #region team */
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
 }
 
 .team-header {
@@ -273,10 +273,6 @@ body {
 /* #endregion */
 
 /* #region portfolio */
-.portfolio {
-    padding: 120px 0;
-}
-
 .portfolio-header {
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -327,13 +323,17 @@ body {
 /* #region footer */
 .footer {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo-light {
-    color: #f4f4fd
+    color: #f4f4fd;
+    padding-bottom: 17px;
 }
 
 .footer-text {
+    display: block;
+    width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
